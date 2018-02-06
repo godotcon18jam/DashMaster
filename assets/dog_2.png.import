@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dog_1.png-7d1af9ccdf68f6d65532dc08744c92b1.stex"
+path="res://.import/dog_2.png-89b7e158f770067e4c7e700fdb6fc8c5.stex"
 
 [deps]
 
-source_file="res://dog_1.png"
-source_md5="4970970d2724b8825e806ac21105cce6"
+source_file="res://assets/dog_2.png"
+source_md5="4d0fc55c15da2be619ab7edce31162a3"
 
-dest_files=[ "res://.import/dog_1.png-7d1af9ccdf68f6d65532dc08744c92b1.stex" ]
-dest_md5="59f8b14e081cdc4eecf43c9413811e0d"
+dest_files=[ "res://.import/dog_2.png-89b7e158f770067e4c7e700fdb6fc8c5.stex" ]
+dest_md5="88e6b6fd91921556b66b644bc2ed216e"
 
 [params]
 

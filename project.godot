@@ -11,16 +11,15 @@ config_version=3
 [application]
 
 config/name="DashMaster"
-run/main_scene="res://start.tscn"
+run/main_scene="res://stages/menu.tscn"
 config/icon="res://icon.png"
 
 [display]
 
 window/size/width=137
 window/size/height=89
-window/size/test_width=548
-window/size/test_height=356
-window/dpi/allow_hidpi=true
+window/size/test_width=1644
+window/size/test_height=1068
 window/stretch/mode="2d"
 
 [input]
@@ -31,10 +30,6 @@ player_1_up=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_nam
 player_2_up=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"unicode":0,"echo":false,"script":null)
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":1,"button_index":12,"pressure":0.0,"pressed":false,"script":null)
  ]
-
-[physics]
-
-2d/default_gravity=235
 
 [rendering]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dog.png-4e2e68f557c08f4f920813740d4b2838.stex"
+path="res://.import/dog_1.png-88b1b2c85c682ea004f1ad2d14c7b34e.stex"
 
 [deps]
 
-source_file="res://dog.png"
-source_md5="3119e0a5222598d8effec36019d36eab"
+source_file="res://assets/dog_1.png"
+source_md5="4970970d2724b8825e806ac21105cce6"
 
-dest_files=[ "res://.import/dog.png-4e2e68f557c08f4f920813740d4b2838.stex" ]
-dest_md5="86192e420dfa160791b288b12704f184"
+dest_files=[ "res://.import/dog_1.png-88b1b2c85c682ea004f1ad2d14c7b34e.stex" ]
+dest_md5="59f8b14e081cdc4eecf43c9413811e0d"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

@@ -15,9 +15,15 @@ func _ready():
     $sprite.animation = self.player
 
 
-func _process(delta):
+func _physics_process(delta):
+    if Input.is_action_pressed("ui_right"):
+        self.apply_impulse(Vector2(0, 0), Vector2(4, 0))
+        
+    if Input.is_action_pressed("ui_left"):
+        self.apply_impulse(Vector2(0, 0), Vector2(-4, 0))
+        
     if Input.is_action_just_pressed("%s_up" % self.player) and self.jump_count < 2:
-        self.linear_velocity.y = JUMPSPEED
+        self.set_axis_velocity(Vector2(1, -50))
         self.jump_count += 1
         $sound_jump.play()
         

@@ -4,8 +4,8 @@ extends Node
 func _ready():
     randomize()
     
-    $player1.connect("died", self, "_player_1_died")
-    $player2.connect("died", self, "_player_2_died")
+    #$player1.connect("died", self, "_player_1_died")
+    #$player2.connect("died", self, "_player_2_died")
 
 
 func _player_1_died():
