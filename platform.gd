@@ -1,5 +1,7 @@
 extends Sprite
 
 
-func _ready():
-    pass
+func _process(delta):
+    position.x -= 0.01
+
+    

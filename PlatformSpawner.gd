@@ -17,13 +17,7 @@ func _process(delta):
         var platform = PlatformNode.instance()
         var size = self.get_viewport().size
         print("size %s", size)
-        platform.position.x = size.x + platform.texture.get_size().x
-        platform.position.y = range(10, size.y)[randi()%range(10, size.y).size()]
+        platform.position.x = 137 + platform.texture.get_size().x
+        platform.position.y = range(30, 80)[randi()%range(30, 80).size()]
         add_child(platform)
         get_node("Timer").start()
-
-#    print(position.y)
-#    position.y = range(100,601)[randi()%range(100,601).size()]
-#    # Called every frame. Delta is time since last frame.
-#    # Update game logic here.
-#    pass

@@ -8,7 +8,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="platform" type="Sprite" index="0"]
+[node name="platform" type="Sprite"]
 
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 1 )
