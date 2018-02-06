@@ -1,6 +1,6 @@
 extends Node2D
 
-var goreNode = preload("res://platform.tscn")
+var PlatformNode = preload("res://platform.tscn")
 
 # class member variables go here, for example:
 # var a = 2
@@ -14,10 +14,10 @@ func _ready():
 func _process(delta):
 	if get_node("Timer").is_stopped():
 		print(delta)
-		var gore = goreNode.instance()
-		gore.position.x = 1224
-		gore.position.y = range(100,601)[randi()%range(100,601).size()]
-		add_child(gore)
+		var platform = PlatformNode.instance()
+		platform.position.x = 1224
+		platform.position.y = range(100,601)[randi()%range(100,601).size()]
+		add_child(platform)
 		get_node("Timer").start()
 
 #	print(position.y)
