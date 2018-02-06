@@ -2,20 +2,19 @@ extends RigidBody2D
 
 export (int) var JUMPSPEED
 
-var start_position = Vector2(10,10)
-
-var is_jumping = false
+var jump_count = 0
 
 
 func _ready():
-    self.position.x = start_position.x
-    self.position.y = start_position.y
+    self.connect("body_entered", self, "_on_body_entered")
 
 
 func _process(delta):
-    
-    if Input.is_action_pressed("ui_up") and not is_jumping:
+    if Input.is_action_just_pressed("ui_up") and self.jump_count < 2:
         self.linear_velocity.y = JUMPSPEED
-        is_jumping = true
+        self.jump_count += 1
         
-        
+
+func _on_body_entered(body):
+    print("something")
+    self.jump_count = 0

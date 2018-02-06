@@ -10,7 +10,7 @@ source_file="res://dog_1.png"
 source_md5="4970970d2724b8825e806ac21105cce6"
 
 dest_files=[ "res://.import/dog_1.png-7d1af9ccdf68f6d65532dc08744c92b1.stex" ]
-dest_md5="9892559c112a195e0d43d031b733442f"
+dest_md5="59f8b14e081cdc4eecf43c9413811e0d"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
