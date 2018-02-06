@@ -20,7 +20,8 @@ func _process(delta):
         self.linear_velocity.y = JUMPSPEED
         self.jump_count += 1
         
-    if position.y < 0:
+    if self.position.y > 100:
+        
         emit_signal("died")
         
 

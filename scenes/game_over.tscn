@@ -2,7 +2,7 @@
 
 [ext_resource path="res://scripts/game_over.gd" type="Script" id=1]
 
-[node name="game_over" type="Node" index="0"]
+[node name="game_over" type="Node"]
 
 script = ExtResource( 1 )
 
@@ -21,7 +21,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 color = Color( 0.101562, 0.093918, 0.093918, 1 )
 
-[node name="text" type="Label" parent="." index="1"]
+[node name="label" type="Label" parent="." index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
