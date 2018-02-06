@@ -6,7 +6,7 @@
 
 [sub_resource type="DynamicFont" id=1]
 
-size = 16
+size = 88
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 2 )
@@ -14,13 +14,13 @@ _sections_unfolded = [ "Font", "Settings" ]
 
 [sub_resource type="DynamicFont" id=2]
 
-size = 16
-use_mipmaps = false
-use_filter = false
+size = 64
+use_mipmaps = true
+use_filter = true
 font_data = ExtResource( 3 )
-_sections_unfolded = [ "Resource" ]
+_sections_unfolded = [ "Extra Spacing", "Font", "Resource", "Settings" ]
 
-[node name="CanvasLayer" type="CanvasLayer" index="0"]
+[node name="CanvasLayer" type="CanvasLayer"]
 
 layer = 1
 offset = Vector2( 0, 0 )
@@ -55,10 +55,11 @@ anchor_left = 0.5
 anchor_top = 0.0
 anchor_right = 0.5
 anchor_bottom = 0.0
-margin_left = -40.5
-margin_top = 20.0
-margin_right = 40.5
-margin_bottom = 16.0
+margin_left = -46.5
+margin_top = 17.0
+margin_right = 411.5
+margin_bottom = 105.0
+rect_scale = Vector2( 0.2, 0.2 )
 rect_pivot_offset = Vector2( 0, 0 )
 mouse_filter = 2
 mouse_default_cursor_shape = 0
@@ -69,18 +70,19 @@ text = "Two Doggos"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Anchor", "Margin", "custom_fonts" ]
+_sections_unfolded = [ "Anchor", "Focus", "Grow Direction", "Hint", "Margin", "Mouse", "Rect", "Size Flags", "Theme", "custom_fonts", "custom_styles" ]
 
 [node name="Button" type="Button" parent="." index="3"]
 
 anchor_left = 0.5
-anchor_top = 1.0
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -28.5
-margin_top = -37.0
-margin_right = 28.5
-margin_bottom = -9.0
+anchor_bottom = 0.5
+margin_left = -14.5
+margin_top = 15.5
+margin_right = 112.5
+margin_bottom = 104.5
+rect_scale = Vector2( 0.2, 0.2 )
 rect_pivot_offset = Vector2( 0, 0 )
 focus_mode = 2
 mouse_filter = 0
@@ -95,6 +97,20 @@ group = null
 text = "Start"
 flat = true
 align = 1
-_sections_unfolded = [ "custom_fonts" ]
+_sections_unfolded = [ "Rect", "custom_fonts" ]
+
+[node name="Control" type="Control" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
 
 

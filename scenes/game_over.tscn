@@ -6,7 +6,7 @@
 
 [sub_resource type="DynamicFont" id=1]
 
-size = 12
+size = 62
 use_mipmaps = false
 use_filter = false
 font_data = ExtResource( 3 )
@@ -14,13 +14,13 @@ _sections_unfolded = [ "Font", "Settings" ]
 
 [sub_resource type="DynamicFont" id=2]
 
-size = 16
-use_mipmaps = false
-use_filter = false
+size = 62
+use_mipmaps = true
+use_filter = true
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="game_over" type="CanvasLayer"]
+[node name="game_over" type="CanvasLayer" index="0"]
 
 layer = 1
 offset = Vector2( 0, 0 )
@@ -58,8 +58,9 @@ anchor_right = 0.5
 anchor_bottom = 0.0
 margin_left = -22.5
 margin_top = 20.0
-margin_right = 22.5
-margin_bottom = 14.0
+margin_right = 168.5
+margin_bottom = 101.0
+rect_scale = Vector2( 0.2, 0.2 )
 rect_pivot_offset = Vector2( 0, 0 )
 mouse_filter = 2
 mouse_default_cursor_shape = 0
@@ -72,7 +73,7 @@ autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "custom_fonts" ]
+_sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="retry" type="Button" parent="." index="3"]
 
@@ -80,9 +81,11 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -22.5
-margin_top = -28.0
-margin_right = 22.5
+margin_left = -17.5
+margin_top = -25.0
+margin_right = 118.5
+margin_bottom = 62.0
+rect_scale = Vector2( 0.2, 0.2 )
 rect_pivot_offset = Vector2( 0, 0 )
 focus_mode = 2
 mouse_filter = 0
@@ -97,6 +100,6 @@ group = null
 text = "Retry"
 flat = true
 align = 1
-_sections_unfolded = [ "custom_fonts" ]
+_sections_unfolded = [ "Rect", "Theme", "custom_fonts" ]
 
 
