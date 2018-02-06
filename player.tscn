@@ -13,11 +13,10 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-radius = 5.37392
-height = 1.29165
+extents = Vector2( 3.49923, 2.25009 )
 
 [node name="Dog" type="RigidBody2D" index="0"]
 
