@@ -19,6 +19,7 @@ func _process(delta):
     if Input.is_action_just_pressed("%s_up" % self.player) and self.jump_count < 2:
         self.linear_velocity.y = JUMPSPEED
         self.jump_count += 1
+        $sound_jump.play()
         
     if self.position.y > 100:
         
