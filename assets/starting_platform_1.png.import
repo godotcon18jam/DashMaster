@@ -7,10 +7,10 @@ path="res://.import/starting_platform_1.png-2ed33bf5286cf1546ee4f349e29370b8.ste
 [deps]
 
 source_file="res://assets/starting_platform_1.png"
-source_md5="129a2c1b51a0983d0a579e4c0391886d"
+source_md5="9df286135d5581e6cea39851ad5d65c8"
 
 dest_files=[ "res://.import/starting_platform_1.png-2ed33bf5286cf1546ee4f349e29370b8.stex" ]
-dest_md5="282953b221ece2c8a072b4db33c56286"
+dest_md5="dab40e656df729bdc8e311b51570c716"
 
 [params]
 
