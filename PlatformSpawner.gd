@@ -8,6 +8,6 @@ func _process(delta):
         var platform = PlatformNode.instance()
         
         platform.position.x = 137 + platform.get_node("sprite").texture.get_width()
-        platform.position.y = range(30, 80)[randi()%range(30, 80).size()]
+        platform.position.y = range(40, 80)[randi()%range(40, 80).size()]
         add_child(platform)
         get_node("Timer").start()
