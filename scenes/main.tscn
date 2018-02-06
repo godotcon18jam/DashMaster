@@ -12,7 +12,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 33.7137, 6.73697 )
 
-[node name="main" type="Node"]
+[node name="main" type="Node" index="0"]
 
 editor/display_folded = true
 script = ExtResource( 1 )
