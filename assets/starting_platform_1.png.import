@@ -10,7 +10,7 @@ source_file="res://assets/starting_platform_1.png"
 source_md5="129a2c1b51a0983d0a579e4c0391886d"
 
 dest_files=[ "res://.import/starting_platform_1.png-2ed33bf5286cf1546ee4f349e29370b8.stex" ]
-dest_md5="282953b221ece2c8a072b4db33c56286"
+dest_md5="fa28d1e7593e8a8a8385c8ebce29ef61"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

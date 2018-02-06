@@ -25,7 +25,7 @@ animations = [ {
 custom_solver_bias = 0.0
 extents = Vector2( 3.49923, 2.25009 )
 
-[node name="dog" type="RigidBody2D"]
+[node name="dog" type="RigidBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -55,6 +55,7 @@ player = "player_1"
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 animation = "player_1"
+frame = 1
 playing = true
 _sections_unfolded = [ "Transform", "Z Index" ]
 
