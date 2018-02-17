@@ -4,8 +4,8 @@ extends Node
 func _ready():
     randomize()
     
-    #$player1.connect("died", self, "_player_1_died")
-    #$player2.connect("died", self, "_player_2_died")
+    $player1.connect("died", self, "_player_1_died")
+    $player2.connect("died", self, "_player_2_died")
 
 
 func _player_1_died():
@@ -22,7 +22,7 @@ func _goto_scene(label):
     
     current_scene.queue_free()
 
-    var s = load("res://scenes/game_over.tscn")    
+    var s = load("res://stages/game_over.tscn")    
     var new_scene = s.instance()
     new_scene.set_label(label)
 

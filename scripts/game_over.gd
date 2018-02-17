@@ -14,4 +14,4 @@ func _on_retry_pressed():
     var current_scene = root.get_child(root.get_child_count() -1)
     
     current_scene.queue_free()
-    get_tree().change_scene("res://scenes/main.tscn")
+    get_tree().change_scene("res://stages/game.tscn")

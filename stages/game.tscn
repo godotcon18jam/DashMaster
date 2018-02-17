@@ -14,7 +14,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 109.558, 6.73697 )
 
-[node name="main" type="Node"]
+[node name="main" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
@@ -90,12 +90,10 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 [node name="player1" parent="." index="3" instance=ExtResource( 6 )]
 
 position = Vector2( 23.6165, 73.9528 )
-JUMPSPEED = -110
 
 [node name="player2" parent="." index="4" instance=ExtResource( 6 )]
 
 position = Vector2( 46.0011, 73.6048 )
-JUMPSPEED = -110
 player = "player_2"
 
 [node name="music" type="AudioStreamPlayer2D" parent="." index="5"]

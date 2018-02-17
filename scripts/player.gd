@@ -1,36 +1,48 @@
 extends RigidBody2D
 
-export (int) var JUMPSPEED = -100
-
 export(String, "player_1", "player_2") var player = "player_1"
-
-var jump_count = 0
 
 signal died
 
 
-func _ready():
-    self.connect("body_entered", self, "_on_body_entered")
+const MOVE_MAX_VELOCITY = 80
+const MOVE_ACCEL = 300
 
+
+func _ready():
     $sprite.animation = self.player
 
 
-func _physics_process(delta):
-    if Input.is_action_pressed("ui_right"):
-        self.apply_impulse(Vector2(0, 0), Vector2(4, 0))
-        
-    if Input.is_action_pressed("ui_left"):
-        self.apply_impulse(Vector2(0, 0), Vector2(-4, 0))
-        
-    if Input.is_action_just_pressed("%s_up" % self.player) and self.jump_count < 2:
-        self.set_axis_velocity(Vector2(1, -50))
-        self.jump_count += 1
+func _integrate_forces(state):
+    var lv = state.linear_velocity
+    var step = state.step
+    
+    var move_left = Input.is_action_pressed("ui_left")
+    var move_right = Input.is_action_pressed("ui_right")
+    var jump = Input.is_action_just_pressed("player_1_up")
+    
+    # TODO: for now I removed the limit to multipe jumps.
+    # I want to move it back later with a different system
+    # (e.g. jump energy that recharges while moving)
+    if jump:
+        lv.y -= 100
         $sound_jump.play()
-        
-    if self.position.y > 100:
-        
-        emit_signal("died")
-        
+    
+    if move_left and not move_right:
+        if lv.x > -MOVE_MAX_VELOCITY:
+            lv.x -= MOVE_ACCEL * step
+    elif move_right and not move_left:
+        if lv.x < MOVE_MAX_VELOCITY:
+            lv.x += MOVE_ACCEL * step
+    
+    # Finally, apply gravity and set back the linear velocity
+    lv += state.total_gravity * step
+    state.linear_velocity = lv
+    
 
-func _on_body_entered(body):
-    self.jump_count = 0
+func _process(delta):
+    # TODO: this value is hardcoded and it is related to the
+    # window size. We should insted add an area2d with collision
+    # marked as "death zone"
+    if self.position.y > 100:
+        emit_signal("died")

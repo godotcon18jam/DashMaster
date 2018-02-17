@@ -26,7 +26,7 @@ animations = [ {
 custom_solver_bias = 0.0
 extents = Vector2( 3.49923, 2.25009 )
 
-[node name="dog" type="RigidBody2D" index="0"]
+[node name="dog" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 1
@@ -35,11 +35,11 @@ mode = 2
 mass = 1.0
 friction = 1.0
 bounce = 0.0
-gravity_scale = 1.0
-custom_integrator = false
+gravity_scale = 2.0
+custom_integrator = true
 continuous_cd = 0
-contacts_reported = 1
-contact_monitor = true
+contacts_reported = 0
+contact_monitor = false
 sleeping = false
 can_sleep = true
 linear_velocity = Vector2( 0, 0 )
@@ -48,7 +48,6 @@ angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "Linear", "Material", "Pickable", "Transform", "Visibility", "Z Index", "collision" ]
-JUMPSPEED = -100
 player = "player_1"
 
 [node name="sprite" type="AnimatedSprite" parent="." index="0"]
@@ -56,7 +55,6 @@ player = "player_1"
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 animation = "player_1"
-frame = 1
 playing = true
 _sections_unfolded = [ "Transform", "Z Index" ]
 
